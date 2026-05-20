@@ -32,7 +32,7 @@ sequenceDiagram
 
     App->>Hook: connect("google.com", 443)
     Note over Hook: 🛑 INTERCEPTED SYSCALL
-    Hook->>Tor: SOCKS5 Handshake (RFC 1928)
+    Hook->>Tor: SOCKS5 Handshake (RFC  1928)
     Hook->>Tor: Request Remote DNS ("google.com")
     Note over Tor: 🛡️ DNS Resolves remotely (No Leak)
     Tor->>Exit: Build Circuit
